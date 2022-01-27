@@ -1,6 +1,6 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    min-height: 100vh;
+    height: 100vh;
     display: flex; 
     flex-direction: column;
     margin: auto;
