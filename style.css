@@ -3,7 +3,6 @@ body {
     min-height: 100vh;
     display: flex; 
     flex-direction: column;
-    column-gap: 60px;
     margin: auto;
 }
 
@@ -17,8 +16,8 @@ body {
     font-size: 24px;
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: 16px;
     background-image: url(https://images.unsplash.com/photo-1641464992906-5e55dc3268da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDc1fGlVSXNuVnRqQjBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat;
@@ -26,56 +25,72 @@ body {
     image-rendering: -webkit-optimize-contrast;
 }
 
-#links {
+.header h1 {
+    margin-left: 36px;
+}
+
+.header ul li {
     list-style-type: none;
-    display: flex;
-    gap: 32px;
+    gap: 32px;   
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 #links li {
     display: inline;
+    margin: 16px;
 }
+
 
 .introduction {
     background-color: #708090;
     display: flex;
     margin-top: 0px;
-    flex-direction: column;
+    flex-direction: row;
+    align-content: center;
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
     justify-self: center;
     align-self: flex-start;
-    flex-shrink: 2;
+    margin-left: 120px;
+    margin-top: 120px;
 }
 
+.introduction h1 {
+    font-size: 36px;
+}
 
 .introduction p {
     font-size: 24px;
-    display: flex;
     flex-wrap: wrap;
 }
 
 .intro {
     border-radius: 25px;
     width: 120px;
-    height: auto;
+    height: 60px;
 }
 
 .introduction img {
-    display: flex;
-    align-self: flex-end;
-    justify-self: center;
-    width: 400px;
+    width: 600px;
     height: auto;
-    margin: 48px;
-    flex-grow: 2;
+    margin: 72px;
+    float: left;
 }
 
-.content h1 {
-  font-size: 22px;
+#content {
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+#content h1 {
+  font-size: 48px;
+  margin-left: 100px;
+  text-align: center;
 }
 
 .animals {
@@ -90,6 +105,7 @@ body {
     width: 300px;
     height: auto;
     border-radius: 25px;
+    border: 10px solid white;
 }
 
 .quote {
@@ -97,6 +113,12 @@ body {
   padding: 32px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 300px;
+  margin-bottom: 300px;
+  border-radius: 25px;
+  width: 1300px;
+  height: auto;
 }
 
 .quote p1 {
@@ -109,18 +131,19 @@ body {
     justify-content: flex-end;
 }
 
-.register {
+#register {
   font-size: 22px;
   background-color: #708090;
   border-radius: 25px;  
   margin: 64px;
   display: flex;
   justify-content: center;
+  margin-bottom: 300px;
 }
 
 .gmail {
     border-radius: 25px;
-    background-color: indigo;
+    background-color: dimgray;
     margin: 12px;
 }
 
